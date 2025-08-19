@@ -7,4 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".OnboardingScreen01">
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="272dp"
+            android:layout_height="62dp"
+            app:srcCompat="@drawable/hlogo"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="30dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
