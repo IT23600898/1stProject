@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._1stProject">
         <activity
+            android:name=".OnboardingScreen02"
+            android:exported="false" />
+        <activity
             android:name=".OnboardingScreen01"
             android:exported="false" />
         <activity
