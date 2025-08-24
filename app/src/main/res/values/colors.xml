@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors -->
+    <color name="primaryGreen">#3EB30C</color>
+    <color name="primaryGreenDark">#40804a</color>
+    <color name="limeGreen">#32CD32</color>
+    <color name="primaryTextGreen">#199B33</color>
+    <color name="primaryIndicatorGreen">#2A9E6B</color>
+
+    <!-- Background Colors -->
+    <color name="backgroundWhite">#FFFFFF</color>
+    <color name="backgroundLight">#FDFDFD</color>
+    <color name="backgroundGray">#ECE8E8</color>
+    <color name="signupGray">#D6D3CE</color>
+    <color name="inputBackground">#F2F3F4</color>
+
+    <!-- Text Colors -->
+    <color name="black">#000000</color>
+    <color name="darkGray">#555555</color>
+    <color name="secondaryTextGray">#8E8E93</color>
+
+    <!-- Button / Accent Colors -->
+    <color name="accentGray">#CBCACA</color>
+    <color name="buttonFacebook">#199B33</color>
+    <color name="buttonGoogle">#199B33</color>
+
+    <!-- Navigation / Tabs -->
+    <color name="navSelected">#2A9E6B</color>
+    <color name="navUnselected">#8E8E93</color>
+
+    <!-- Additional Colors for Profile & Settings -->
+    <color name="profileTextColor">#40804A</color>
+    <color name="dividerGray">#CCCCCC</color>
+    <color name="switchThumbColor">#2A9E6B</color>
+    <color name="switchTrackColor">#DDDDDD</color>
+
 </resources>

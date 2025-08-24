@@ -1,45 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/onboard01"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FDFDFD"
     tools:context=".OnboardingScreen01">
 
-    <!-- App Logo -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="272dp"
         android:layout_height="62dp"
-        app:srcCompat="@drawable/hlogo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hlogo" />
 
-    <!-- Plant Image -->
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="355dp"
         android:layout_height="350dp"
-        app:srcCompat="@drawable/plant01"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="68dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:srcCompat="@drawable/plant01" />
 
-    <!-- Text -->
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.187">
 
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/dot_active" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/dot_inactive" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/dot_inactive" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Enjoy your life"
-        android:textSize="34sp"
+        android:layout_marginTop="52dp"
+        android:text="@string/onboard1_title"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -50,28 +76,28 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="with Natural Plants"
-        android:textColor="#3EB30C"
-        android:textSize="34sp"
+        android:layout_marginTop="104dp"
+        android:text="@string/onboard1_subtitle"
+        android:textColor="@color/primaryGreen"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView2" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:text="Next ->"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#3EB30C"
+        android:id="@+id/onboardBtnNext"
+        android:layout_width="169dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/button_onboard01"
+        android:text="@string/btn_next"
+        android:textColor="@color/backgroundWhite"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

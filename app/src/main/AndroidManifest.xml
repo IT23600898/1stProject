@@ -12,13 +12,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._1stProject">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".OnboardingScreen02"
+            android:exported="false" />
+        <activity
+            android:name=".SettingScreen"
+            android:exported="false" />
+        <activity
+            android:name=".LoginScreen"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".MyPlantsScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".SignupScreen"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardingScreen03"
             android:exported="false" />
         <activity
             android:name=".OnboardingScreen01"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LaunchScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
